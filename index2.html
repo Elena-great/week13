@@ -7,17 +7,38 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="let a=+prompt('Введите первое число')
-    let b=+prompt('Введите второе число')
-    alert (a+b)">+</button>
-    <button onclick="let a=+prompt('Введите первое число')
-    let b=+prompt('Введите второе число')
-    alert (a-b)">-</button>
-    <button onclick="let a=+prompt('Введите первое число')
-    let b=+prompt('Введите второе число')
-    alert (a*b)">*</button>
-    <button onclick="let a=+prompt('Введите первое число')
-    let b=+prompt('Введите второе число')
-    alert (a/b)">/</button>
+    <button onclick="sum()">+</button>
+    <button onclick="min()">-</button>
+    <button onclick="mult()">*</button>
+    <button onclick="divis()">/</button>
+<script>
+
+function number() {
+let a=+prompt('Введите первое число')
+let b=+prompt('Введите второе число')
+}
+
+function sum(a, b) {
+    number();
+    return a + b;
+}
+
+    
+function min(a, b) {
+number();
+  return a - b;
+}
+
+function mult(a, b) {
+number();
+  return a * b;
+}
+
+function divis(a, b) {
+ number();
+  return a / b;
+}
+
+    </script>
 </body>
 </html>
